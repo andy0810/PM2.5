@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+   "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+   "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+    <!-- 开发模式 -->
+    <constant name="struts.devMode" value="true" />
+    <!-- 扩展名改为action -->
+    <constant name="struts.action.extension" value="action"/>
+    <!-- 主题配置 -->
+    <constant name="struts.ui.theme" value="simple"/>
+
+ 	<include file="struts_info.xml"></include>
+	
+	<package name="default" namespace="/" extends="struts-default">
+         <action name="refresh" class="savePMData" method="refresh">
+			<result name="success">/jsp/refresh.jsp</result>
+        </action>
+	<action name="findByCity" class="findAction" method="findByCity">
+		
+	<result name="success">/index.jsp</result>
+	      
+ </action>
+ 
+ <action name="showAll" class="findAction" method="showAll">
+		
+	<result name="success">/index12.jsp</result>
+	      
+ </action>
+ 
+ <action name="addUser" class="userAction" method="addUser">
+		
+	<result name="success">/index11.jsp</result>
+</action>
+
+<action name="showWeather" class="findAction" method="showWeather">
+		
+	<result name="success">/index2.jsp</result>
+	      
+</action>
+ 
+ <action name="showBySeek" class="findAction" method="showBySeek">
+		
+	<result name="success">/index3.jsp</result>
+	      
+</action>
+
+	</package>
+
+
+</struts>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ssh.oa.po">
+
+	<class name="PMData" table="PM_Info">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+	    <property name="cityName" />
+		<property name="error_code" />	
+		<property name="reason"/>
+		<property name="quality"/>
+		<property name="pmTen" />	
+		<property name="pm25"/>
+		<property name="aqi" />	
+		<property name="co"/>
+		<property name="no2" />	
+		<property name="o3"/>
+		<property name="so2"/>
+		<property name="updateTime"/>
+		<property name="pm25Predict"/>
+		<!-- <many-to-one name="cityName" class="com.ssh.oa.po.City" column="cityNameId"></many-to-one> -->
+		
+	</class>
+	
+	
+</hibernate-mapping>

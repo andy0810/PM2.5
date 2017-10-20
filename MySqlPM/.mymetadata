@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MySqlPM"
+  id="myeclipse.1505619347401"
+  context-root="/MySqlPM"
+  j2ee-spec="5.0"
+  archive="MySqlPM.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

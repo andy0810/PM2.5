@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ssh.oa.po">
+
+	<class name="User" table="itcast_user">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="cityName" />	
+		<property name="phone"/>
+		<property name="email"/>	
+		<property name="nickName"/>	
+	</class>
+	
+</hibernate-mapping>
